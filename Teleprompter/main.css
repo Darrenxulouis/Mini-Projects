@@ -65,10 +65,11 @@ textarea{
 
 .tele_screen{
 	word-wrap: break-word;
-	transition: 1s;
+	color:white;
 	position:absolute;
 	font-family: 'Roboto', monospace;
 	font-size: 6.5rem;
 	padding:10%;
 	text-align: left;
+	z-index: -1;
 }
