@@ -1,0 +1,42 @@
+body, html{
+	padding:0;
+	margin:0;
+	height:100%;
+	width:100%;
+}
+
+html{
+	font-size: 62.5%;
+	letter-spacing: 5px;
+	font-family: 'Josefin Slab';
+}
+
+h3{
+	font-size: 3rem;
+}
+
+a, a:visited, a:hover, a:active {
+    color:black;
+	text-decoration-color: none;
+	text-decoration: none;
+}
+
+header{
+	font-size: 3rem;
+	font-weight: bold;
+	background-color: grey;
+	padding: 10px;
+}
+
+#ip_container{
+	text-align: center;
+	padding: 10% 15%;
+}
+
+#ip_address{
+	font-size: 8rem;
+	right:0%;
+	width: 100%;
+	position: absolute;
+	transition: 1s;
+}
