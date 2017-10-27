@@ -35,7 +35,7 @@ function displayIP(ip)
 														setTimeout(function(){
 															$("#ip_address").text("How are you, by the way?");
 															setTimeout(function(){
-																$("#ip_address").text("No need to answer that, i'm just following protocol..");
+																$("#ip_address").text("No need to answer that, i'm just running my scripts..");
 																setTimeout(function(){
 																	$("#ip_address").text("Thank you for waiting..");
 																	setTimeout(function(){

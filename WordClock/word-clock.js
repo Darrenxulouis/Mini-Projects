@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$('#welcome').css("left", "0%");
-	setTimeout(function(){$('#welcome').css("left", "-100%");}, 2500);
+	setTimeout(function(){$('#welcome').css("left", "-100%");}, 1250);
 	wordClock();
 });
 
