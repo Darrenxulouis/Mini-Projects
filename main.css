@@ -5,6 +5,8 @@
 body, html{
 	height:100%;
 	width:100%;
+	letter-spacing: 2px;
+	font-family: 'Raleway', monospace;
 }
 
 body, html, h3, h5{
@@ -14,6 +16,10 @@ body, html, h3, h5{
 
 html{
 	font-size: 62.5%;
+}
+
+h3{
+	font-size: 4rem;
 }
 
 a{
@@ -27,7 +33,15 @@ header{
 	background-color: rgba(0,0,0, 0.5);
 	position:fixed;
 	z-index: 999;
-	padding:1%;
+	padding:15px;
+}
+
+footer{
+	width:100%;
+	font-size: 2rem;
+	background-color: #222020;
+	padding:10px;
+	text-align: right;
 }
 
 li{
@@ -35,16 +49,16 @@ li{
 }
 
 #intro_container > h3{
-	font-size: 4rem;
 	text-align: center;
 	margin:5% auto;
 }
 
-#intro_container > p{
-	font-size:2rem;
+#intro_container{
+	margin:7.5% 0%;
 }
 
 #about{
+	font-size: 2.5rem;
 	text-align: center;
 	width:inherit;
 }
@@ -68,6 +82,25 @@ li{
 	margin:2.5% 5%;
 }
 
+#about > ul > li:hover{
+	 -webkit-animation: rotate 2s linear infinite;
+     border: none;
+}
+
+@-webkit-keyframes rotate {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+#project_list{
+	background-color: #696969;
+	text-align: center;
+	padding:5% 0%;
+}
 
 .top_container{
 	height:75%;
@@ -93,6 +126,33 @@ li{
 .text_container > h3{
 	font-size:6rem;
 	/*font-size:7vw;*/
+}
+
+.project_thumbnail{
+	cursor: pointer;
+	color:white;
+	background-color: #808080;
+	display:inline-grid;
+	box-shadow: 2px 2px 2px #363636;
+	width:270px;
+	height:125px;
+	font-size:2.5rem;
+	margin:5px;
+	transition:0.5s;
+}
+
+.project_thumbnail:hover{
+	color:black;
+	box-shadow: 2px 2px 2px silver;
+	border:0.75px solid white;
+}
+
+.project_thumbnail > span{
+	margin: auto;
+}
+
+.project_container{
+	margin-top: 50px;
 }
 
 
