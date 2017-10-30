@@ -1,0 +1,46 @@
+body, html{
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+	text-align: center;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+input{
+	border-width: 0px;
+}
+
+table{
+	border-spacing: 10px;
+}
+
+#calculator{
+	margin:auto;
+	margin-top: 5%;
+	border:1px solid black;
+	height:500px;
+	width:400px;
+}
+
+#screen{
+	font-size: 5rem;
+	height:15%;
+	width:100%;
+}
+
+#buttons{
+	padding:10px;
+	border:1px solid black;
+	height:85%;
+	width:inherit;
+}
+
+.button{
+	cursor:pointer;
+	width:15%;
+	border:1px solid black;
+}
