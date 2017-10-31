@@ -4,6 +4,7 @@ body, html{
 	margin:0;
 	padding:0;
 	text-align: center;
+
 }
 
 html{
@@ -19,6 +20,7 @@ table{
 }
 
 #calculator{
+	font-size: 2rem;
 	margin:auto;
 	margin-top: 5%;
 	border:1px solid black;
@@ -39,8 +41,20 @@ table{
 	width:inherit;
 }
 
+#buttons tr:first-child td{
+	background-color: #FF4500;
+}
+
 .button{
 	cursor:pointer;
 	width:15%;
 	border:1px solid black;
+}
+
+.operator{
+	background-color: #D3D3D3;
+}
+
+.num{
+	background-color: grey;
 }
