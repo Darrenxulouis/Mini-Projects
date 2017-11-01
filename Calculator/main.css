@@ -4,11 +4,13 @@ body, html{
 	margin:0;
 	padding:0;
 	text-align: center;
-
+	font-family: 'work sans', monospace;
+	font-size: 3rem;
 }
 
 html{
 	font-size: 62.5%;
+	background-color: #4f4f4f;
 }
 
 input{
@@ -19,16 +21,37 @@ table{
 	border-spacing: 10px;
 }
 
+header{
+	height:5%;
+	text-align: left;
+	padding:10px;
+}
+
+footer{
+	position:fixed;
+	bottom:0;
+	right:0;
+	text-align: right;
+}
+
+a{
+	color:white;
+	text-decoration-color: none;
+	text-decoration: none;
+}
+
 #calculator{
+	background-color: #a3a3a3;
 	font-size: 2rem;
 	margin:auto;
-	margin-top: 5%;
-	border:1px solid black;
 	height:500px;
 	width:400px;
 }
 
 #screen{
+	padding:10px;
+	box-sizing: border-box;
+	border:1px solid grey;
 	font-size: 5rem;
 	height:15%;
 	width:100%;
@@ -36,25 +59,35 @@ table{
 
 #buttons{
 	padding:10px;
-	border:1px solid black;
 	height:85%;
 	width:inherit;
 }
 
-#buttons tr:first-child td{
-	background-color: #FF4500;
-}
-
 .button{
+	background-color: #D3D3D3;
 	cursor:pointer;
 	width:15%;
-	border:1px solid black;
+	box-shadow: 1px 1px 0.5px grey;
+}
+
+.button:active{
+	background-color: #bababa;
 }
 
 .operator{
-	background-color: #D3D3D3;
+	transition:1s;
 }
 
 .num{
-	background-color: grey;
+	background-color: white;
+}
+
+.ac{
+	background-color: #FF4500;
+}
+
+.chosen{
+	background-color: #FF4500;
+	box-shadow: 1px 1px 0.5px #ffa500;
+	transition:1s;
 }
