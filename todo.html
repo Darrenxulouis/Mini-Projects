@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="./To-Do-List/main.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<meta charset="UTF-8">
+<title>To Do</title>
+</head>
+<body>
+	<header>
+		<a href="todo.html">To-Do List</a>
+	</header>
+
+	<div id="todo" ng-app="todo" ng-controller="listCtrl">
+		<h1>To-Do List</h1>
+		<p>{{message}}</p>
+		<ul>
+			<li ng-repeat="x in todo track by $index">{{x.text}}<span ng-click="remove_item($index)">&times;</span></li>
+		</ul>
+		<div id="input">
+			<input id="new_item" type="text" ng-model="new_item">
+			<button id="add_button" ng-click="add_new_item()">Add</button>
+		</div>
+	</div>
+	
+</body>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="./To-Do-List/todo.js"></script>
+
+</html>
