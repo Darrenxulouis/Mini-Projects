@@ -1,0 +1,21 @@
+Integrate index page to allow dynamic content
+Finish javascript on index page
+Configure mobile friendly on #6 and #5
+Fix footer and header on #4
+Make sure all project have proper header and footer
+Tidy up code before it gets to #10
+
+
+
+Project number list:
+#0. Index
+#1. Word Clock
+#2. Teleprompter
+#3. myIP
+#4. Calculator
+#5. To-Do List
+#6. Morse Translator
+#7. Timer
+#8. Quote cycle
+#9. Hidden Message
+#10. How we are feeling
