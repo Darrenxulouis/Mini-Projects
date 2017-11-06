@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="./Stopwatch/main.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta charset="UTF-8">
+<title>Stopwatch</title>
+</head>
+<body>
+	<div class="number_container">
+		<div id="minutes" class="digits">
+			<div class="digit num_left">
+				<div class="hor top">
+					<div class="triangle_left"></div>
+					<div class="triangle_right"></div>
+				</div>
+				<div class="hor mid">
+					<div class="triangle_left"></div>
+					<div class="triangle_right"></div>
+				</div>
+				<div class="hor bot">
+					<div class="triangle_left"></div>
+					<div class="triangle_right"></div>
+				</div>
+				<div class="ver top left">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div> 
+				</div>
+				<div class="ver bot left">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div> 
+				</div>
+				<div class="ver top right">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div>
+				</div>
+				<div class="ver bot right">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div>
+				</div>
+			</div>
+			<div class="digit num_right">
+				<div class="hor top">
+					<div class="triangle_left"></div>
+					<div class="triangle_right"></div>
+				</div>
+				<div class="hor mid">
+					<div class="triangle_left"></div>
+					<div class="triangle_right"></div>
+				</div>
+				<div class="hor bot">
+					<div class="triangle_left"></div>
+					<div class="triangle_right"></div>
+				</div>
+				<div class="ver top left">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div> 
+				</div>
+				<div class="ver bot left">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div> 
+				</div>
+				<div class="ver top right">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div>
+				</div>
+				<div class="ver bot right">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div>
+				</div>
+			</div>		
+		</div>
+		<div class="colon digits">:</div>
+		<div id="seconds" class="digits">
+			<div class="digit num_left">
+				<div class="hor top">
+					<div class="triangle_left"></div>
+					<div class="triangle_right"></div>
+				</div>
+				<div class="hor mid">
+					<div class="triangle_left"></div>
+					<div class="triangle_right"></div>
+				</div>
+				<div class="hor bot">
+					<div class="triangle_left"></div>
+					<div class="triangle_right"></div>
+				</div>
+				<div class="ver top left">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div> 
+				</div>
+				<div class="ver bot left">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div> 
+				</div>
+				<div class="ver top right">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div>
+				</div>
+				<div class="ver bot right">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div>
+				</div>
+			</div>
+			<div class="digit num_right">
+				<div class="hor top">
+					<div class="triangle_left"></div>
+					<div class="triangle_right"></div>
+				</div>
+				<div class="hor mid">
+					<div class="triangle_left"></div>
+					<div class="triangle_right"></div>
+				</div>
+				<div class="hor bot">
+					<div class="triangle_left"></div>
+					<div class="triangle_right"></div>
+				</div>
+				<div class="ver top left">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div> 
+				</div>
+				<div class="ver bot left">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div> 
+				</div>
+				<div class="ver top right">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div>
+				</div>
+				<div class="ver bot right">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div>
+				</div>
+			</div>	
+		</div>
+		<div class="colon digits">:</div>
+		<div id="miliseconds" class="digits">
+			<div class="digit num_left">
+				<div class="hor top">
+					<div class="triangle_left"></div>
+					<div class="triangle_right"></div>
+				</div>
+				<div class="hor mid">
+					<div class="triangle_left"></div>
+					<div class="triangle_right"></div>
+				</div>
+				<div class="hor bot">
+					<div class="triangle_left"></div>
+					<div class="triangle_right"></div>
+				</div>
+				<div class="ver top left">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div> 
+				</div>
+				<div class="ver bot left">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div> 
+				</div>
+				<div class="ver top right">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div>
+				</div>
+				<div class="ver bot right">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div>
+				</div>
+			</div>
+			<div class="digit num_right">
+				<div class="hor top">
+					<div class="triangle_left"></div>
+					<div class="triangle_right"></div>
+				</div>
+				<div class="hor mid">
+					<div class="triangle_left"></div>
+					<div class="triangle_right"></div>
+				</div>
+				<div class="hor bot">
+					<div class="triangle_left"></div>
+					<div class="triangle_right"></div>
+				</div>
+				<div class="ver top left">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div> 
+				</div>
+				<div class="ver bot left">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div> 
+				</div>
+				<div class="ver top right">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div>
+				</div>
+				<div class="ver bot right">
+					<div class="triangle_top"></div>
+					<div class="triangle_bot"></div>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<div id="buttons">
+		<button id="start">Start</button>
+		<button id="lap">Lap</button>
+		<button id="stop">Stop</button>
+		<button id="clear">Clear</button>
+	</div>
+
+</body>
+<script src="./Stopwatch/stopwatch.js"></script>
+
+</html>
