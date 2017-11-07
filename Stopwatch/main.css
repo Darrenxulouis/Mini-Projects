@@ -55,6 +55,7 @@ body, html{
 }
 
 .mid{
+	display:none;
 	top:63px;
 	bottom:63px;	
 }

@@ -6,6 +6,8 @@ Make sure all project have proper header and footer
 Tidy up code before it gets to #10
 figure out window resizing, hint should be at #6
 get feedback on whether the digits are too big for #7
+Style #7
+
 
 
 

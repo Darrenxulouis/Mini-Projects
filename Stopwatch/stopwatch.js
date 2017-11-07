@@ -6,41 +6,60 @@ $(document).ready(function(){
 	var a;
 	$("#start").click(function(){
 		running = true;
-		a = timer(minutes,seconds,milisec,running);
+		$("#start").attr("disabled",true);
+		timer();
 	});
 
 	$("#stop").click(function(){
-		alert("stopping");
 		running = false;
-		a.running = false;
+		$("#start").removeAttr("disabled");
 	});
-});
 
-function timer(minutes, seconds, milisec, running){
-	this.running = running;
-	function count(){
+	$("#lap").click(function(){
 		if(running)
 		{
-			milisec ++;
-			if(milisec == 100)
-			{
-				console.log(running);
-				milisec = 0;
-				seconds++;
-				update_display("seconds",seconds);
-			}
-			if(seconds == 60)
-			{
-				seconds = 0;
-				minutes++;
-				update_display("minutes",minutes);
-			}
-			update_display("miliseconds",milisec);
-			setTimeout(count,10);
+			var lap_time = $("<li/>");
+   			lap_time.attr("class","lap_time");
+   			lap_time.text(format_number(minutes)+":"+format_number(seconds)+":"+format_number(milisec));
+			$("#laps").append(lap_time);
 		}
+	});
+
+	$("#clear").click(function(){
+   		minutes = 0, seconds = 0, milisec = 0, running = false;
+   		update_display("minutes", minutes);
+   		update_display("seconds", seconds);
+   		update_display("miliseconds", milisec);
+   		$("#laps").children().remove();
+   		$("#start").removeAttr("disabled");
+	});
+
+	function timer(){
+		this.running = running;
+		function count(){
+			if(running)
+			{
+				milisec ++;
+				if(milisec == 100)
+				{
+					console.log(running);
+					milisec = 0;
+					seconds++;
+					update_display("seconds",seconds);
+				}
+				if(seconds == 60)
+				{
+					seconds = 0;
+					minutes++;
+					update_display("minutes",minutes);
+				}
+				update_display("miliseconds",milisec);
+				setTimeout(count,10);
+			}
+		}
+		count();
 	}
-	count();
-}
+});
 
 function update_display(type, digits){
 	var unit = digits%10;
@@ -49,6 +68,10 @@ function update_display(type, digits){
 	$("#"+type+">.num_right>*").show();
 	$("#"+type+">.num_left").find(display_timer(tens)).hide();
 	$("#"+type+">.num_right").find(display_timer(unit)).hide();
+}
+
+function format_number(number){
+	return formattedNumber = ("0" + number).slice(-2);
 }
 
 function display_timer(number){
