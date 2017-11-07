@@ -1,0 +1,129 @@
+body, html{
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+}
+
+#buttons{
+	text-align: center;
+	width:100%;
+	margin:auto;
+}
+
+.number_container{
+	padding:10% 0px 5% 0px;
+	margin:auto;
+	width:490px;
+	display:table;
+	text-align: center;
+}
+
+.colon{
+	font-size: 100px;	
+}
+
+.digits{
+	display:table-cell;
+	vertical-align: middle;
+}
+
+.digit{
+	border:1px solid transparent;
+	display:inherit;
+	background-color: red;
+	position:relative;
+	height:134px;
+	width:70px;
+}
+
+.hor{
+	position:absolute;
+	left:8px;
+	right:8px;
+	width:54px;
+	height:8px;
+	background-color: blue;
+}
+
+.top{
+	top:0;
+}
+
+.bot{
+	bottom:0;
+}
+
+.mid{
+	display:none;
+	top:63px;
+	bottom:63px;	
+}
+
+.ver{
+	position:absolute;
+	height:51px;
+	width:8px;
+	background-color: blue;
+}
+
+.left{
+	left:0;
+}
+
+.right{
+	right:0;
+}
+
+.top.left, .top.right{
+	top:10px;
+}
+
+.bot.left, .bot.right{
+	bottom:10px;
+}
+
+.top.right, .bot.right{
+	right:0;
+	left:auto;
+}
+
+.triangle_left{
+	position: absolute;
+	left:-4px;
+	width: 0; 
+	height: 0; 
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent; 
+	border-right:4px solid blue;
+}
+
+.triangle_right{
+	position: absolute;
+	right:-4px;
+	width: 0; 
+	height: 0; 
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent; 
+	border-left:4px solid blue;
+}
+
+.triangle_top{
+	position: absolute;
+	top:-4px;
+	width: 0; 
+	height: 0; 
+	border-bottom: 4px solid blue; 
+	border-right: 4px solid transparent;
+	border-left:4px solid transparent;
+}
+
+.triangle_bot{
+	position: absolute;
+	bottom:-4px;
+	width: 0; 
+	height: 0; 
+	border-top: 4px solid blue; 
+	border-right: 4px solid transparent;
+	border-left:4px solid transparent;
+}

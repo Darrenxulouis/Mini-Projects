@@ -1,0 +1,49 @@
+body, html{
+	height:100%;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+
+html{
+	font-size: 62.5%;
+	text-align: center;
+	font-family: 'PT Serif', serif;
+}
+
+h2{
+	font-size: 4rem;
+}
+
+textarea{
+	font-family: 'PT Serif', serif;
+	font-size: 2rem;
+	box-shadow: 2px 2px 1px #888888;
+}
+
+#translator{
+	margin:10px;
+	display:block;
+}
+
+#translate{
+	font-family: 'PT Serif', serif;
+	font-size: 1.5rem;
+	background-color: white;
+	display:inherit;
+	margin:auto;
+	text-align: center;
+	padding:10px;
+	width:150px;
+	height:50px;
+	box-shadow: none;
+}
+
+#translate:focus{
+	outline:0;
+}
+
+#translation{
+	font-size: 4rem;
+	padding:0 100px;
+}

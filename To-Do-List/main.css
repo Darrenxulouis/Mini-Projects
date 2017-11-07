@@ -49,6 +49,8 @@ span{
 	float:right;
 }
 
+input:focus {outline:none;}
+
 #todo{
 	margin:auto;
 	width:600px;
