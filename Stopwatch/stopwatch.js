@@ -3,7 +3,6 @@ $(document).ready(function(){
 	var seconds = 0;
 	var minutes = 0;
 	var running = false;
-	var a;
 	$("#start").click(function(){
 		running = true;
 		$("#start").attr("disabled",true);
