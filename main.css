@@ -7,6 +7,8 @@ body, html{
 	width:100%;
 	letter-spacing: 2px;
 	font-family: 'Raleway', monospace;
+
+
 }
 
 body, html, h3, h5{
@@ -16,6 +18,7 @@ body, html, h3, h5{
 
 html{
 	font-size: 62.5%;
+	overflow-x: hidden;
 }
 
 h3{
@@ -25,15 +28,6 @@ h3{
 a{
 	color: white;
 	text-decoration: none;
-}
-
-header{
-	width:100%;
-	font-size: 2.5rem;
-	background-color: rgba(0,0,0, 0.5);
-	position:fixed;
-	z-index: 999;
-	padding:15px;
 }
 
 footer{
@@ -47,6 +41,10 @@ footer{
 
 li{
 	list-style-type: none;
+}
+
+text{
+	cursor:pointer;
 }
 
 #intro_container > h3{
@@ -84,26 +82,27 @@ li{
 }
 
 .circle {
+	cursor:pointer;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
 }
 
-.circle:hover{
-	animation: dash 3s linear alternate infinite;
-}
-/*.circle:hover{
-	  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-	animation: dash 3s linear alternate infinite;
-}*/
-/*
-.dash_in{
-	animation: dash_in 3s linear;
+#about > p{
+	display:block;
+	position:relative;
 }
 
-.dash_out{
-	animation: dash_in 3s linear;
-}*/
+#contact_me{
+	padding:100px 15px;
+	background-color: #0078ff;
+	color:#9de7f2;
+	text-align: center;
+}
+
+#contact_me > p{
+	font-size: 2rem;
+	display:block;
+}
 
 @keyframes dash{
 	from {
@@ -114,20 +113,6 @@ li{
   }
 }
 
-/*#about > ul > li:hover{
-	 -webkit-animation: rotate 2s linear infinite;
-     border: none;
-}
-
-@-webkit-keyframes rotate {
-    from{
-        -webkit-transform: rotate(0deg);
-    }
-    to{
-        -webkit-transform: rotate(360deg);
-    }
-}*/
-
 #project_list{
 	background-color: #d8f3f6;
 	text-align: center;
@@ -135,7 +120,7 @@ li{
 }
 
 .top_container{
-	height:75%;
+	height:100%;
 	width:100%;
 	background-image: url('./img/img1.jpg');
 	background-repeat: no-repeat;
@@ -196,7 +181,7 @@ li{
   border: 2px solid #66cae7;
 }
 
-.project_thumbnail:hover >a {
+.project_thumbnail:hover>a {
   color: black;
 }
 
@@ -233,6 +218,13 @@ li{
 [class*="col-"] {
     width: 100%;
 }
+
+@media only screen and (max-width: 600px){
+	.circle {stroke-dasharray: 0; stroke-dashoffset: 0;}
+	.project_thumbnail {border: 2px solid #66cae7;}
+	.project_thumbnail>a{color: black;}
+}
+
 @media only screen and (min-width: 600px) {
     /* For tablets: */
     .col-m-1 {width: 8.33%;}
